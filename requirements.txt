@@ -4,6 +4,6 @@ pandas
 numpy
 scikit-learn
 scikeras
-tensorflow-cpu
+tensorflow
 joblib
 pydantic
