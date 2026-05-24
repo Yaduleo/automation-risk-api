@@ -32,3 +32,9 @@ def predict_risk(data: UserInput):
         "industry_sector": data.industry_sector,
         "predicted_automation_risk_score": float(prediction[0])
     }
+
+if __name__ == "__main__":
+    import uvicorn
+    import os
+    port = int(os.environ.get("PORT", 10000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
