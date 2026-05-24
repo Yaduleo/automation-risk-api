@@ -1,9 +1,10 @@
 fastapi
 uvicorn
 pandas
-numpy
+numpy<2.0.0
 scikit-learn
 scikeras
-tensorflow
+tensorflow-cpu; sys_platform != 'darwin' and platform_machine != 'arm64'
+tensorflow; sys_platform == 'darwin' or platform_machine == 'arm64'
 joblib
 pydantic
